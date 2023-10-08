@@ -1,0 +1,124 @@
+use museums;
+
+db.museum_Locations.insert({name:"Bangalore",location:[{name:"Badulla", ticket_cost:0},
+{name:"Ramnagar", ticket_cost:20},
+{name:"Isha Loop (Tunnel No. 42)", ticket_cost:40},
+{name:"Deonnagar", ticket_cost:60},
+{name:"Avenue Road", ticket_cost:80},
+{name:"Buenos Dias", ticket_cost:100},
+{name:"Rampur", ticket_cost:120},
+{name:"Riyanagar", ticket_cost:140},
+{name:"malleshwaram", ticket_cost:160},
+{name:"Amarnagar", ticket_cost:180},
+{name:"Harry Plains National Park", ticket_cost:200},
+{name:"NandanNagar", ticket_cost:220},
+{name:"Tarish Layout", ticket_cost:240},
+{name:"Mg road", ticket_cost:260},
+{name:"Hat road", ticket_cost:280},
+{name:"Nawab Street, ticket_cost:300},
+{name:"Gampola", ticket_cost:320},
+{name:"Nanu Nagar", ticket_cost:340},
+{name:"Peradeniya Junction", ticket_cost:360},
+{name:"Rambukkana", ticket_cost:380},
+{name:"Polgahawela Junction", ticket_cost:400} ,
+{name:"Ambbar Road", ticket_cost:420},
+{name:"Gampaha Street", ticket_cost:440},
+{name:"Keniya", ticket_cost:460},
+{name:"Dema Road", ticket_cost:480},		 
+{name:"Maradonna Road", ticket_cost:490},
+{name:"Colombo Fort", ticket_cost:500}]});
+
+db.museum_Locations.insert({name:"matale-line",location:[{name:"Matale", ticket_cost:0},
+{name:"Talkotor Road", ticket_cost:20},
+{name:"Kohombiliwala", ticket_cost:40},
+{name:"Elwala", ticket_cost:80},
+{name:"Ukuwela", ticket_cost:100},
+{name:"Udaththawela", ticket_cost:120},
+{name:"Marakona", ticket_cost:140},
+{name:"Yatawara", ticket_cost:160},
+{name:"Wattegama", ticket_cost:180},
+{name:"Katugastota", ticket_cost:200},
+{name:"Asgiriya", ticket_cost:220},
+{name:"Kandy", ticket_cost:240}]});
+
+db.museum_Locations.insert({name:"Tamil-Nadu",location:[{name:"Noor Nagar", ticket_cost:0},
+{name:"Puttalam", ticket_cost:20},
+{name:"Palavi", ticket_cost:60},
+{name:"Mundal", ticket_cost:80},
+{name:"Bangadeniya", ticket_cost:100},
+{name:"Chilaw", ticket_cost:120},
+{name:"Madampe", ticket_cost:140},
+{name:"Thummodara ", ticket_cost:160},
+{name:"Negombo", ticket_cost:180},
+{name:"Katunayake	", ticket_cost:200},	 
+{name:"Bandaranaike International Airport", ticket_cost:220},
+{name:"Katunayake South", ticket_cost:240},// Searching for data in mongo db
+
+
+
+
+db.tot_seats.insert({name:"Udarata Menike", location:"MG", classes:[{name:"1st class", seats:30}, {name:"2nd class", seats:100}, {name:"3rd class", seats:150}]});
+db.tot_seats.insert({name:"Podi Menike", location:"MG", classes:[{name:"1st class", seats:20}, {name:"2nd class", seats:100}, {name:"3rd class", seats:200}]});
+db.tot_seats.insert({name:"Tikiri Menike", location:"MG", classes:[{name:"1st class", seats:24}, {name:"2nd class", seats:432}, {name:"3rd class", seats:300}]});
+db.tot_seats.insert({name:"Senkadagala Menike", location:"MG, classes:[{name:"1st class", seats:67}, {name:"2nd class", seats:100}, {name:"3rd class", seats:150}]"});
+db.tot_seats.insert({name:"Colombo - Badulla Night Mail Train", location:"MG", classes:[{name:"1st class", seats:70}, {name:"2nd class", seats:100}, {name:"3rd class", seats:150}]});
+db.tot_seats.insert({name:"Muthu Kumari", location:"Tamil-Nadu", classes:[{name:"1st class", seats:45}, {name:"2nd class", seats:300}, {name:"3rd class", seats:150}]});
+db.tot_seats.insert({name:"Bangadeniya", location:"Tamil-Nadu", classes:[{name:"1st class", seats:65}, {name:"2nd class", seats:100}, {name:"3rd class", seats:150}]});
+db.tot_seats.insert({name:"Express (A)", location:"matale-line", classes:[{name:"1st class", seats:35}, {name:"2nd class", seats:140}, {name:"3rd class", seats:150}]});
+db.tot_seats.insert({name:"Express (B)", location:"matale-line", classes:[{name:"1st class", seats:30}, {name:"2nd class", seats:100}, {name:"3rd class", seats:430}]});
+
+
+
+
+db.classes.insert({name:"1st class", ticket_costRatio:1.05})
+db.classes.insert({name:"2nd class", ticket_costRatio:1.02})
+db.classes.insert({name:"3rd class", ticket_costRatio:1})
+
+
+
+
+db.schedules.insert({time:"05.00 am"});
+db.schedules.insert({time:"06.00 am"});
+db.schedules.insert({time:"09.30 am"});
+db.schedules.insert({time:"10.00 am"});
+db.schedules.insert({time:"10.30 am"});
+db.schedules.insert({time:"11.00 am"});
+db.schedules.insert({time:"12.00 pm"});
+db.schedules.insert({time:"1.30 pm"});
+db.schedules.insert({time:"02.00 pm"});
+db.schedules.insert({time:"03.30 pm"});
+db.schedules.insert({time:"04.00 pm"});
+db.schedules.insert({time:"05.30 pm"});
+db.schedules.insert({time:"07.00 pm"});
+db.schedules.insert({time:"11.00 pm"});
+
+
+db.cards.insert({card:"1234123412341234", cvc:"123" ,exp:"12/12", amount:10000.00});
+db.cards.insert({card:"1111111111111111", cvc:"111" ,exp:"11/11", amount:10000.00});
+
+
+
+
+db.phones.insert({phone:"0777296705", pin:"1234"});
+db.phones.insert({phone:"0776655707", pin:"1234"});
+
+
+
+
+db.employees.insert({"firstName":"Tenusha","lastName":"Guruge","nic":"123456789V","address":[{"street":"a","city":"b","state":"c"},{"street":"a1","city":"b1","state":"c1"}]});
+db.employees.insert({"firstName":"Ranmal","lastName":"Dewage","nic":"111111111V","address":[{"street":"a","city":"b","state":"c"},{"street":"a1","city":"b1","state":"c1"}]});
+db.employees.insert({"firstName":"Vimukthi","lastName":"Rajapaksha","nic":"222222222V","address":[{"street":"a","city":"b","state":"c"},{"street":"a1","city":"b1","state":"c1"}]});
+
+
+db.admins.insert({"fname":"ara","lname":"a","phone":"0777296705","nic":"123456789V","address":"a","email":"aravindakulasooriya1995@gmail.com","password":"3007","discount":false,"enabled":true,"__v":0})
+
+
+
+
+
+
+
+
+
+
+
