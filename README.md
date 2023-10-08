@@ -1,5 +1,4 @@
 # Qr Ticketing System
-Ticketing system for a museum 
 
 ## Introduction
 
