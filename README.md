@@ -11,19 +11,8 @@ Once the main admin creates an admin the created admin will receive a confirmati
 
 Using their profile, they can view their booking history. Both registered users and unregistered users can view the cost of booking. but only logged in users can confirm the reservation. Once the reservation is confirmed user will receive an email that includes the reservation details and unique QR code for that reservation. The user can scan the QR code at the theatre . and get a ticket. When they are getting into the theatre, they need to scan the QR code.  
 
-## Architectural Diagrams
-
-This application follows Model-View-Controller (MVC) architecture. The view is implemented using ReactJS which is using a composite view pattern. The controller and model is implemented using Node.js, MongoDB NoSQL database is connected to the back end. Front end and the back end communicate through REST API calls.
-
-<p></p><br />
-
-<img src="https://i.ibb.co/ZL3rYsR/Capture27.png" alt="Capture27" border="0">
-Figure 1: component diagram
-<p></p><br />
 
 ## Features of the application
-
-
 
 ### 1)  Real-time ticket availability
 
